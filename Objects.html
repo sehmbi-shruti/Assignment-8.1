@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Objects</title>
+</head>
+<body>
+<script>
+    function createObject()
+    {
+        var myObject = new Object();
+        myObject.name = "Shruti";
+        myObject.height = 165;
+        myObject.aboutYourSelf = function () 
+    {
+    return "I am " + this.name + ". I am " + this.height + " cms in height.";
+    }
+    return myObject;
+    }
+    var me = createObject();
+    console.log(me.aboutYourSelf())
+</script>
+This file shows Objects in JS displayed in Console.
+</body>
+</html>
